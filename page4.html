@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finally, Bloom</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #00022e;
+    font-family: Georgia, serif;
+    color: #e2b4bc;
+    overflow: hidden;
+}
+
+.page {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 45px 25px;
+    position: relative;
+}
+html {
+    min-height: 100%;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.chapter {
+    font-size: 12px;
+    letter-spacing: 6px;
+    color: #b78b53;
+    margin-bottom: 25px;
+}
+
+.flower {
+    width: min(90vw, 370px);
+    height: auto;
+    overflow: visible;
+    animation: sway 5s ease-in-out infinite alternate;
+    transform-origin: bottom center;
+}
+
+@keyframes sway {
+    from { transform: rotate(-1deg); }
+    to { transform: rotate(1deg); }
+}
+
+.petal {
+    fill: #e2b4bc;
+    stroke: #ce9ca8;
+    stroke-width: 0.7;
+}
+
+.petal-light {
+    fill: #edc4cb;
+}
+
+.sparkle {
+    position: absolute;
+    color: #d6b477;
+    animation: float 4s ease-in-out infinite;
+}
+
+.s1 { top: 18%; left: 20%; }
+.s2 { top: 28%; right: 20%; animation-delay: 1s; }
+.s3 { top: 48%; left: 15%; animation-delay: 2s; }
+.s4 { top: 55%; right: 16%; animation-delay: 0.5s; }
+.s5 { top: 14%; right: 35%; animation-delay: 1.5s; }
+
+@keyframes float {
+    0%,100% { transform: translateY(0); opacity: .3; }
+    50% { transform: translateY(-15px); opacity: 1; }
+}
+
+.message {
+    max-width: 380px;
+    margin-top: 15px;
+    color: #eee2dc;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.message h1 {
+    font-size: 34px;
+    font-weight: normal;
+    color: #e2b4bc;
+    margin-bottom: 14px;
+}
+
+.signature {
+    margin-top: 22px;
+    color: #b78b53;
+    letter-spacing: 4px;
+    font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<main class="page">
+
+    <div class="chapter">PAZEEEEEE 4 LAST H ZIII</div>
+
+    <span class="sparkle s1">✦</span>
+    <span class="sparkle s2">✧</span>
+    <span class="sparkle s3">✦</span>
+    <span class="sparkle s4">✧</span>
+    <span class="sparkle s5">✦</span>
+
+    <svg class="flower" viewBox="0 0 300 370"
+         xmlns="http://www.w3.org/2000/svg">
+
+        <!-- Mature curved stem -->
+        <path d="M150 190
+                 C145 245 163 292 148 360"
+              stroke="#71805C"
+              stroke-width="8"
+              fill="none"
+              stroke-linecap="round"/>
+
+        <!-- Large mature left leaf -->
+        <path d="M151 272
+                 C106 219 39 229 42 272
+                 C66 315 118 301 151 272Z"
+              fill="#91A37A"/>
+
+        <path d="M151 272 Q94 267 48 256"
+              stroke="#71805C"
+              stroke-width="2"
+              fill="none"/>
+
+        <!-- Large mature right leaf -->
+        <path d="M152 315
+                 C187 255 253 264 254 299
+                 C237 338 190 344 152 315Z"
+              fill="#91A37A"/>
+
+        <path d="M152 315 Q203 298 247 287"
+              stroke="#71805C"
+              stroke-width="2"
+              fill="none"/>
+
+        <!-- Smaller upper leaf -->
+        <path d="M149 239
+                 C113 201 77 208 80 235
+                 C100 258 129 252 149 239Z"
+              fill="#91A37A"/>
+
+        <!-- Back layer of petals -->
+        <g class="petal">
+            <ellipse cx="150" cy="93" rx="36" ry="65"/>
+            <ellipse cx="150" cy="93" rx="36" ry="65"
+                     transform="rotate(45 150 145)"/>
+            <ellipse cx="150" cy="93" rx="36" ry="65"
+                     transform="rotate(90 150 145)"/>
+            <ellipse cx="150" cy="93" rx="36" ry="65"
+                     transform="rotate(135 150 145)"/>
+            <ellipse cx="150" cy="93" rx="36" ry="65"
+                     transform="rotate(180 150 145)"/>
+            <ellipse cx="150" cy="93" rx="36" ry="65"
+                     transform="rotate(225 150 145)"/>
+            <ellipse cx="150" cy="93" rx="36" ry="65"
+                     transform="rotate(270 150 145)"/>
+            <ellipse cx="150" cy="93" rx="36" ry="65"
+                     transform="rotate(315 150 145)"/>
+        </g>
+
+        <!-- Inner layer of rounded petals -->
+        <g class="petal-light">
+            <ellipse cx="150" cy="116" rx="27" ry="47"/>
+            <ellipse cx="150" cy="116" rx="27" ry="47"
+                     transform="rotate(60 150 145)"/>
+            <ellipse cx="150" cy="116" rx="27" ry="47"
+                     transform="rotate(120 150 145)"/>
+            <ellipse cx="150" cy="116" rx="27" ry="47"
+                     transform="rotate(180 150 145)"/>
+            <ellipse cx="150" cy="116" rx="27" ry="47"
+                     transform="rotate(240 150 145)"/>
+            <ellipse cx="150" cy="116" rx="27" ry="47"
+                     transform="rotate(300 150 145)"/>
+        </g>
+
+        <!-- Golden centre -->
+        <circle cx="150" cy="145" r="25"
+                fill="#b78b53"/>
+
+        <circle cx="150" cy="145" r="19"
+                fill="#cba66e"/>
+
+        <circle cx="142" cy="139" r="2"
+                fill="#f0d7a5"/>
+        <circle cx="158" cy="139" r="2"
+                fill="#f0d7a5"/>
+        <circle cx="150" cy="151" r="2"
+                fill="#f0d7a5"/>
+        <circle cx="143" cy="153" r="1.5"
+                fill="#f0d7a5"/>
+        <circle cx="157" cy="153" r="1.5"
+                fill="#f0d7a5"/>
+
+    </svg>
+
+    <section class="message">
+        <h1>And end..</h1>
+
+      thats it if u didnt notice the flower went from wilted to blooming ik u didnt
+        ha.... dumbahhh<br>
+<br>
+
+Idiot, <br>
+I might be dramatic, stubborn and occasionally impossible, but that doesnt mean you dont matter to me...<br>
+
+
+LOVEE YAHHHHH <3<br>
+<br>
+
+apna insta khole... yah das it
+    </section>
+
+    <div class="signature">
+        WITH LOVE · ALWAYS
+    </div>
+
+</main>
+
+</body>
+</html>
